@@ -119,19 +119,9 @@ $result=mysqli_query($conn,$sql);
 		  </table>
 		<?php $i++; }
 }
-?> 
+?>
 
-<?php 
-
-	function function_alert($message,$total) 
-	{ 
-	
-		echo "confirm('You didn\'t answer $message out of $total questions. Are you sure to submit?')"; 
-	} 
-
-?> 
-
-	<center><button onclick="<?php function_alert($no_answer,$total) ?>"><a href="question.php" style="text-decoration:none;padding:4px;">Take Again</a></button></center>
+	<center><button><a href="question.php" style="text-decoration:none;padding:4px;">Take Again</a></button></center>
 
 
 </body>
